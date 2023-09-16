@@ -7,23 +7,23 @@ using System.Threading.Tasks;
 namespace RevitAutoTransmit
 {
     [Serializable]
-    internal class RequiredObject
+    internal class RevitFileInstance
     {
         internal string Name { get; set; }
-        internal string Type { get; set; }
-        internal string SubFolderPath { get; set; }
-        internal bool IsRevitFile { get; set; }
+        internal string PathToRead { get; set; }
+        internal string PathToWrite { get; set; }
         internal bool NeedToCopy { get; set; }
         internal bool AddDateInFront { get; set; }
-        internal RequiredObject(string name, string type, string subFolderPath, bool isRevitFile, bool needToCopy, bool addDateInFront)
+        internal RevitFileInstance(string name, string pathToRead, string pathToWrite, bool needToCopy, bool addDateInFront )
         {
             Name = name;
-            Type = type;
-            SubFolderPath = subFolderPath;
-            IsRevitFile = isRevitFile;
+            PathToRead = pathToRead;
+            PathToWrite = pathToWrite;
             NeedToCopy = needToCopy;
             AddDateInFront = addDateInFront;
         }
+           
+        
 
     }
 }

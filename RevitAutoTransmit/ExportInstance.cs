@@ -13,8 +13,8 @@ namespace RevitAutoTransmit
         internal string Name { get; set; }
         internal string CopyFrom { get; set; }
         internal string CopyTo { get; set; }
-        internal ObservableCollection<RequiredObject> Files { get; set; }
-        internal ExportInstance(string name, string copyFrom, string copyTo, ObservableCollection<RequiredObject> files)
+        internal ObservableCollection<RevitFileInstance> Files { get; set; }
+        internal ExportInstance(string name, string copyFrom, string copyTo, ObservableCollection<RevitFileInstance> files)
         {
             Name = name;
             CopyFrom = copyFrom;

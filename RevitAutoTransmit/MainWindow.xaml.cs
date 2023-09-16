@@ -70,5 +70,24 @@ namespace RevitAutoTransmit
             }
         }
 
+        private void ExitButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void AddNewButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RemoveButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ModifyButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
